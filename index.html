@@ -240,7 +240,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card" data-category="normal" data-title="otimização pc windows fps limpeza drivers">
 <h3>Otimização PC</h3>
-<div class="price">R$` 49,99<span>/único</span></div>
+<div class="price">R$ 49,99<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-anydesk"><i class="fa-solid fa-desktop"></i> Realizado via AnyDesk</div>
 <div class="badge badge-success"><i class="fa-solid fa-shield-halved"></i> 100% Seguro e Confiável</div>
@@ -258,7 +258,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card" data-category="normal" data-title="combo premium mta fps drops fluido completo">
 <h3>Combo Premium</h3>
-<div class="price">R`$ 75,00<span>/único</span></div>
+<div class="price">R$ 75,00<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-discount" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2);">
 <i class="fa-solid fa-fire"></i> 15% de Desconto Incluso
@@ -278,7 +278,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="fortnite fps desempenho delay travamentos">
 <h3>Otimização Fortnite</h3>
-<div class="price">R$` 30,00<span>/único</span></div>
+<div class="price">R$ 30,00<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-success"><i class="fa-solid fa-crosshairs"></i> Chega de Travar</div>
 </div>
@@ -294,7 +294,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="cs2 counter strike fps lag travamento inicializacao">
 <h3>Otimização CS2</h3>
-<div class="price">R`$ 30,00<span>/único</span></div>
+<div class="price">R$ 30,00<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-success"><i class="fa-solid fa-crosshairs"></i> Foco em FPS Máximo</div>
 </div>
@@ -310,7 +310,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="valorant fps desempenho delay travamentos competitivo">
 <h3>Otimização Valorant</h3>
-<div class="price">R$` 30,00<span>/único</span></div>
+<div class="price">R$ 30,00<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-success"><i class="fa-solid fa-crosshairs"></i> Vantagem Competitiva</div>
 </div>
@@ -326,7 +326,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="fivem gta v lag citizen anti-lag fps pvp">
 <h3>Otimização FiveM</h3>
-<div class="price">R`$ 29,99<span>/único</span></div>
+<div class="price">R$ 29,99<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-success"><i class="fa-solid fa-shield"></i> Citizen Anti-Lag</div>
 </div>
@@ -342,7 +342,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="mta san andreas lag fps scripts mods vitalicio">
 <h3>Otimizações MTA</h3>
-<div class="price">R$` 29,99<span>/único</span></div>
+<div class="price">R$ 29,99<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-vip"><i class="fa-solid fa-crown"></i> Acesso Vitalício ao Canal MTA</div>
 </div>
@@ -358,7 +358,7 @@ border-top: 1px solid #27272a; text-align: center; position: relative; z-index: 
 
 <article class="card product-card hidden-step1 hidden-step2" data-category="jogos" data-title="gta san premium ant lag skins temas cores overdose vitalicio">
 <h3>GTA San Premium</h3>
-<div class="price">R`$ 30,00<span>/único</span></div>
+<div class="price">R$ 30,00<span>/único</span></div>
 <div class="badges">
 <div class="badge badge-vip"><i class="fa-solid fa-crown"></i> Acesso Vitalício ao Canal</div>
 </div>
@@ -439,67 +439,75 @@ let currentTab = 'normal';
 let isAnimating = false;
 
 function switchTab(tabId) {
-if (currentTab === tabId || isAnimating) return;
-currentTab = tabId;
-isAnimating = true;
+    if (currentTab === tabId || isAnimating) return;
+    currentTab = tabId;
+    isAnimating = true;
 
-document.querySelectorAll('.tab-btn').forEach(btn => {
-btn.classList.remove('active');
-});
-event.target.classList.add('active');
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
 
-document.getElementById('searchInput').value = '';
-runFilterAnimation();
+    // Remove a limpeza da barra de pesquisa ao trocar de aba
+    // document.getElementById('searchInput').value = ''; 
+    runFilterAnimation();
 }
 
 function runFilterAnimation() {
-const term = document.getElementById('searchInput').value.toLowerCase().trim();
-const productCards = document.querySelectorAll('.product-card');
+    const term = document.getElementById('searchInput').value.toLowerCase().trim();
+    const productCards = document.querySelectorAll('.product-card');
 
-productCards.forEach(card => {
-card.classList.add('hidden-step1');
-});
+    productCards.forEach(card => {
+        card.classList.add('hidden-step1');
+    });
 
-setTimeout(() => {
-productCards.forEach(card => {
-const content = card.textContent.toLowerCase() + " " + (card.getAttribute('data-title') || "");
-const matchesSearch = content.includes(term);
-const matchesTab = term !== '' ? true : card.getAttribute('data-category') === currentTab;
+    setTimeout(() => {
+        productCards.forEach(card => {
+            const content = card.textContent.toLowerCase() + " " + (card.getAttribute('data-title') || "");
+            const matchesSearch = content.includes(term);
+            
+            // Se tiver algo digitado, ignora a aba atual. Se a barra estiver vazia, filtra pela aba.
+            const matchesTab = term !== '' ? true : card.getAttribute('data-category') === currentTab;
 
-if (matchesSearch && matchesTab) {
-card.classList.remove('hidden-step2');
-} else {
-card.classList.add('hidden-step2');
-}
-});
+            if (matchesSearch && matchesTab) {
+                card.classList.remove('hidden-step2');
+            } else {
+                card.classList.add('hidden-step2');
+            }
+        });
 
-setTimeout(() => {
-productCards.forEach(card => {
-if (!card.classList.contains('hidden-step2')) {
-card.classList.remove('hidden-step1');
-}
-});
-isAnimating = false;
-}, 50);
+        setTimeout(() => {
+            productCards.forEach(card => {
+                if (!card.classList.contains('hidden-step2')) {
+                    card.classList.remove('hidden-step1');
+                }
+            });
+            isAnimating = false;
+        }, 50);
 
-}, 300);
+    }, 300);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchInput');
 
-searchInput.addEventListener('input', () => {
-if(searchInput.value.trim() !== '') {
-document.querySelectorAll('.tab-btn').forEach(btn => btn.style.opacity = '0.5');
-} else {
-document.querySelectorAll('.tab-btn').forEach(btn => btn.style.opacity = '1');
-}
+    searchInput.addEventListener('input', () => {
+        // Opacidade dos botões de aba enquanto pesquisa
+        if(searchInput.value.trim() !== '') {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.style.opacity = '0.5');
+        } else {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.style.opacity = '1');
+        }
 
-if(!isAnimating){
-isAnimating = true;
-runFilterAnimation();
-}
-});
+        // debounce simples para não travar a digitação
+        clearTimeout(window.searchTimeout);
+        window.searchTimeout = setTimeout(() => {
+            if(!isAnimating){
+                isAnimating = true;
+                runFilterAnimation();
+            }
+        }, 150); // delay de 150ms
+    });
 });
 </script>
 

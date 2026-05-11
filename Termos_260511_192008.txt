@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Uso | JGui Boost</title>
+
+<meta name="description" content="Termos de uso e políticas de serviço da JGui Boost. Transparência e segurança na otimização do seu PC.">
+<meta name="keywords" content="termos de uso, políticas, jgui boost, otimização pc">
+<meta name="author" content="JGui Boost">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#ef4444">
+<link rel="canonical" href="https://jgui-boost.lp77.one/termos.html">
+
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Termos de Uso | JGui Boost">
+<meta property="og:description" content="Termos de uso e políticas de serviço da JGui Boost. Transparência e segurança na otimização do seu PC.">
+<meta property="og:url" content="https://jgui-boost.lp77.one/termos.html">
+<meta property="og:site_name" content="JGui Boost">
+<meta property="og:image" content="https://jgui-boost.lp77.one/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Termos de Uso | JGui Boost">
+<meta name="twitter:description" content="Termos de uso e políticas de serviço da JGui Boost. Transparência e segurança na otimização do seu PC.">
+<meta name="twitter:image" content="https://jgui-boost.lp77.one/og-image.png">
+<link rel="icon" type="image/png" href="https://jgui-boost.lp77.one/image160.png">
+<link rel="apple-touch-icon" href="https://jgui-boost.lp77.one/image160.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+--bg-color: #09090b;
+--card-bg: #18181b;
+--primary: #ef4444;
+--primary-glow: rgba(239, 68, 68, 0.4);
+--discord: #5865F2;
+--text-main: #ffffff;
+--text-muted: #a1a1aa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+.fireflies { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden; }
+.firefly { position: absolute; width: 3px; height: 3px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 8px 2px var(--primary-glow); animation: float 15s infinite linear, blink 4s infinite ease-in-out alternate; opacity: 0; }
+@keyframes float { 0% { transform: translateY(100vh) translateX(0) scale(0); } 50% { transform: translateY(50vh) translateX(20px) scale(1); } 100% { transform: translateY(-10vh) translateX(-20px) scale(0); } }
+@keyframes blink { 0% { opacity: 0.05; } 100% { opacity: 0.5; } }
+.firefly:nth-child(1) { left: 15%; animation-duration: 14s; animation-delay: 0s; }
+.firefly:nth-child(2) { left: 35%; animation-duration: 18s; animation-delay: 2s; }
+.firefly:nth-child(3) { left: 55%; animation-duration: 12s; animation-delay: 5s; }
+.firefly:nth-child(4) { left: 75%; animation-duration: 16s; animation-delay: 1s; }
+.firefly:nth-child(5) { left: 85%; animation-duration: 20s; animation-delay: 4s; }
+
+header {
+display: flex; justify-content: center; align-items: center;
+padding: 20px 5%; background: rgba(9, 9, 11, 0.75);
+backdrop-filter: blur(10px); border-bottom: 1px solid #27272a;
+position: sticky; top: 0; z-index: 999;
+}
+
+.logo { font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; text-decoration: none; color: var(--text-main); }
+.logo span { color: var(--primary); }
+
+main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+
+.search-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto 40px; }
+.search-container input {
+width: 100%; padding: 15px 20px 15px 50px; font-size: 1.05rem;
+border-radius: 12px; border: 1px solid #3f3f46;
+background: #18181b; color: white; outline: none;
+transition: 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.search-container input:focus { border-color: var(--primary); box-shadow: 0 0 15px var(--primary-glow); }
+.search-container i { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.2rem; }
+
+h1 { font-size: 2.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+h2 { font-size: 1.5rem; margin: 30px 0 15px 0; color: var(--primary); text-align: left; }
+p { margin-bottom: 20px; color: var(--text-muted); text-align: left; }
+
+.terms-card { background: var(--card-bg); padding: 40px; border-radius: 12px; border: 1px solid #27272a; text-align: left; position: relative; z-index: 10; }
+
+.btn-back {
+display: block; text-align: center; margin-top: 40px; color: var(--text-muted);
+text-decoration: none; font-size: 0.9rem; transition: 0.3s;
+}
+.btn-back:hover { color: var(--primary); }
+
+footer {
+margin-top: 80px; padding: 40px 5%; background: #09090b;
+border-top: 1px solid #27272a; position: relative; z-index: 10;
+display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+
+.footer-logo { font-size: 1.5rem; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; text-decoration: none; color: var(--text-main); }
+.footer-logo span { color: var(--primary); }
+
+/* Correção: sobrescrevendo o text-align: left da tag p genérica para os itens do footer */
+.slogan { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; font-style: italic; text-align: center; width: 100%; }
+
+.footer-links { margin-bottom: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; width: 100%; }
+.footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: 0.3s; font-weight: 500; }
+.footer-links a:hover { color: var(--primary); }
+
+/* Correção: sobrescrevendo o text-align: left da tag p genérica para os itens do footer */
+.copyright { color: #52525b; font-size: 0.8rem; margin-top: 20px; width: 100%; text-align: center; }
+
+@media (max-width: 768px) {
+h1 { font-size: 1.8rem; }
+.terms-card { padding: 25px; }
+}
+</style>
+</head>
+<body>
+
+<div class="fireflies">
+<span class="firefly"></span><span class="firefly"></span><span class="firefly"></span>
+<span class="firefly"></span><span class="firefly"></span>
+</div>
+
+<header>
+<a href="/" class="logo">JGUI<span> BOOST</span></a>
+</header>
+
+<main>
+<div class="search-container">
+<i class="fa-solid fa-search"></i>
+<input type="text" id="searchInput" placeholder="Buscar nos termos...">
+</div>
+
+<h1>Termos de Uso</h1>
+
+<section class="terms-card">
+<div class="term-item">
+<p>Ao contratar os serviços da <strong>JGui Boost</strong>, você concorda com os termos descritos abaixo. Estes termos garantem a segurança e a transparência de nossa otimização profissional.</p>
+</div>
+
+<div class="term-item">
+<h2>1. Como funciona a otimização</h2>
+<p>Todo o processo é realizado remotamente, via AnyDesk, com total segurança. Todas as aplicações e ajustes são testados em diferentes hardwares. Nosso trabalho se limita à otimização do sistema operacional; não acessamos documentos pessoais, contas ou dados privados.</p>
+</div>
+
+<div class="term-item">
+<h2>2. Objetivo do serviço</h2>
+<p>Aplicamos ajustes no Windows para melhorar o desempenho em jogos e uso geral, focando em aumentar o FPS, reduzir input lag e melhorar a estabilidade. Respeitamos sempre as limitações do hardware; não prometemos transformar máquinas de baixo desempenho em alto nível, mas extraímos o máximo do seu sistema.</p>
+</div>
+
+<div class="term-item">
+<h2>3. Segurança e Compatibilidade</h2>
+<p>As otimizações beneficiam todos os jogos e programas. Não desativamos serviços essenciais do hardware nem aplicamos alterações que possam gerar banimentos em jogos ou comprometer suas contas.</p>
+</div>
+
+<div class="term-item">
+<h2>4. Política de Reembolso</h2>
+<p>Por se tratar de serviço digital personalizado, não realizamos reembolsos após a confirmação do pagamento, salvo em casos extremos onde a otimização não funcione conforme prometido. Nesse caso, o reembolso é imediato e o computador é restaurado ao estado original.</p>
+</div>
+
+<div class="term-item">
+<h2>5. Recomendações e Formatação</h2>
+<p>Para melhores resultados, recomendamos a formatação do sistema operacional antes da otimização. O cliente pode optar por instalar a versão padrão do Windows ou outra de sua preferência.</p>
+</div>
+
+<div class="term-item">
+<h2>6. Atendimento e Suporte</h2>
+<p>O atendimento da JGui Boost é realizado exclusivamente via servidor oficial do Discord. Qualquer suporte pós-serviço deve ser solicitado através de nosso sistema de tickets na plataforma.</p>
+</div>
+</section>
+
+<a href="/" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Voltar para o Início</a>
+</main>
+
+<footer>
+<a href="/" class="footer-logo">JGUI<span> BOOST</span></a>
+<p class="slogan">"Leve o desempenho do seu computador para outro nível."</p>
+
+<div class="footer-links">
+<a href="termos.html">Termos de Serviço</a>
+<a href="privacidade.html">Política de Privacidade</a>
+<a href="faq.html">FAQ</a>
+</div>
+
+<p class="copyright">© 2026 JGui Boost. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const termItems = document.querySelectorAll('.term-item');
+
+searchInput.addEventListener('input', function(e) {
+const term = e.target.value.toLowerCase().trim();
+termItems.forEach(item => {
+const text = item.innerText.toLowerCase();
+item.style.display = text.includes(term) ? 'block' : 'none';
+});
+});
+</script>
+
+</body>
+</html>

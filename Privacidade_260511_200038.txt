@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade | JGui Boost</title>
+
+<meta name="description" content="Política de Privacidade da JGui Boost. Saiba como protegemos seus dados e garantimos total transparência durante a otimização.">
+<meta name="keywords" content="privacidade, segurança, jgui boost, otimização pc, anydesk seguro">
+<meta name="author" content="JGui Boost">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#ef4444">
+<link rel="canonical" href="https://jgui-boost.lp77.one/privacidade.html">
+
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Política de Privacidade | JGui Boost">
+<meta property="og:description" content="Transparência total sobre seus dados. Veja como a JGui Boost garante sua segurança.">
+<meta property="og:url" content="https://jgui-boost.lp77.one/privacidade.html">
+<meta property="og:site_name" content="JGui Boost">
+<meta property="og:image" content="https://jgui-boost.lp77.one/og-image.png">
+<link rel="icon" type="image/png" href="https://jgui-boost.lp77.one/image160.png">
+<link rel="apple-touch-icon" href="https://jgui-boost.lp77.one/image160.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+--bg-color: #09090b;
+--card-bg: #18181b;
+--primary: #ef4444;
+--primary-glow: rgba(239, 68, 68, 0.4);
+--text-main: #ffffff;
+--text-muted: #a1a1aa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+.fireflies { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden; }
+.firefly { position: absolute; width: 3px; height: 3px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 8px 2px var(--primary-glow); animation: float 15s infinite linear, blink 4s infinite ease-in-out alternate; opacity: 0; }
+@keyframes float { 0% { transform: translateY(100vh) translateX(0) scale(0); } 50% { transform: translateY(50vh) translateX(20px) scale(1); } 100% { transform: translateY(-10vh) translateX(-20px) scale(0); } }
+@keyframes blink { 0% { opacity: 0.05; } 100% { opacity: 0.5; } }
+.firefly:nth-child(1) { left: 15%; animation-duration: 14s; animation-delay: 0s; }
+.firefly:nth-child(2) { left: 35%; animation-duration: 18s; animation-delay: 2s; }
+.firefly:nth-child(3) { left: 55%; animation-duration: 12s; animation-delay: 5s; }
+.firefly:nth-child(4) { left: 75%; animation-duration: 16s; animation-delay: 1s; }
+.firefly:nth-child(5) { left: 85%; animation-duration: 20s; animation-delay: 4s; }
+
+header {
+display: flex; justify-content: center; align-items: center;
+padding: 20px 5%; background: rgba(9, 9, 11, 0.75);
+backdrop-filter: blur(10px); border-bottom: 1px solid #27272a;
+position: sticky; top: 0; z-index: 999;
+}
+
+.logo { font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; text-decoration: none; color: var(--text-main); }
+.logo span { color: var(--primary); }
+
+main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+
+.search-container { position: relative; width: 100%; max-width: 500px; margin: 0 auto 40px; }
+.search-container input {
+width: 100%; padding: 15px 20px 15px 50px; font-size: 1.05rem;
+border-radius: 12px; border: 1px solid #3f3f46;
+background: #18181b; color: white; outline: none;
+transition: 0.3s; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.search-container input:focus { border-color: var(--primary); box-shadow: 0 0 15px var(--primary-glow); }
+.search-container i { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.2rem; }
+
+h1 { font-size: 2.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+h2 { font-size: 1.5rem; margin: 30px 0 15px 0; color: var(--primary); text-align: left; }
+p { margin-bottom: 20px; color: var(--text-muted); text-align: left; }
+
+.privacy-card { background: var(--card-bg); padding: 40px; border-radius: 12px; border: 1px solid #27272a; text-align: left; position: relative; z-index: 10; }
+
+.btn-back {
+display: block; text-align: center; margin-top: 40px; color: var(--text-muted);
+text-decoration: none; font-size: 0.9rem; transition: 0.3s;
+}
+.btn-back:hover { color: var(--primary); }
+
+footer {
+margin-top: 80px; padding: 40px 5%; background: #09090b;
+border-top: 1px solid #27272a; position: relative; z-index: 10;
+display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+
+.footer-logo { font-size: 1.5rem; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; text-decoration: none; color: var(--text-main); }
+.footer-logo span { color: var(--primary); }
+.slogan { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; font-style: italic; text-align: center; width: 100%; }
+
+.footer-links { margin-bottom: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; width: 100%; }
+.footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: 0.3s; font-weight: 500; }
+.footer-links a:hover { color: var(--primary); }
+
+.copyright { color: #52525b; font-size: 0.8rem; margin-top: 20px; width: 100%; text-align: center; }
+
+@media (max-width: 768px) {
+h1 { font-size: 1.8rem; }
+.privacy-card { padding: 25px; }
+}
+</style>
+</head>
+<body>
+
+<div class="fireflies">
+<span class="firefly"></span><span class="firefly"></span><span class="firefly"></span>
+<span class="firefly"></span><span class="firefly"></span>
+</div>
+
+<header>
+<a href="/" class="logo">JGUI<span> BOOST</span></a>
+</header>
+
+<main>
+<div class="search-container">
+<i class="fa-solid fa-search"></i>
+<input type="text" id="searchInput" placeholder="Buscar na política...">
+</div>
+
+<h1>Política de Privacidade</h1>
+
+<section class="privacy-card">
+<div class="privacy-item">
+<p>A <strong>JGui Boost</strong> valoriza a privacidade e a segurança de seus clientes. Esta política detalha como lidamos com as informações durante a prestação de nossos serviços de otimização profissional.</p>
+</div>
+
+<div class="privacy-item">
+<h2>1. Coleta de Informações</h2>
+<p>Não coletamos, armazenamos ou processamos dados pessoais sensíveis, arquivos privados, fotos ou senhas. Durante o serviço, as únicas informações visualizadas são as estritamente necessárias para a configuração técnica do sistema operacional e hardware.</p>
+</div>
+
+<div class="privacy-item">
+<h2>2. Transparência no Acesso Remoto</h2>
+<p>Todo o serviço é realizado via AnyDesk. O cliente detém o controle total da sessão, podendo visualizar cada movimento do cursor e cada alteração realizada em tempo real. O acesso é encerrado imediatamente após a conclusão do serviço ou por solicitação do cliente.</p>
+</div>
+
+<div class="privacy-item">
+<h2>3. Segurança de Dados</h2>
+<p>Garantimos que nenhum software malicioso ou ferramenta de rastreamento é instalada durante a otimização. Utilizamos apenas métodos e scripts validados para ganho de performance e estabilidade do sistema.</p>
+</div>
+
+<div class="privacy-item">
+<h2>4. Comunicação no Discord</h2>
+<p>As informações compartilhadas em nossos canais de suporte no Discord (como especificações de hardware) são utilizadas exclusivamente para personalizar a otimização da sua máquina e resolver problemas técnicos via tickets.</p>
+</div>
+
+<div class="privacy-item">
+<h2>5. Compartilhamento com Terceiros</h2>
+<p>A JGui Boost jamais vende, aluga ou compartilha informações de seus clientes com terceiros. Nosso compromisso é estritamente com o desempenho do seu setup.</p>
+</div>
+
+<div class="privacy-item">
+<h2>6. Alterações nesta Política</h2>
+<p>Reservamo-nos o direito de atualizar esta política de privacidade para refletir melhorias em nossos processos de segurança. Recomendamos que os clientes revisem esta página periodicamente.</p>
+</div>
+</section>
+
+<a href="/" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Voltar para o Início</a>
+</main>
+
+<footer>
+<a href="/" class="footer-logo">JGUI<span> BOOST</span></a>
+<p class="slogan">"Leve o desempenho do seu computador para outro nível."</p>
+
+<div class="footer-links">
+<a href="termos.html">Termos de Serviço</a>
+<a href="privacidade.html">Política de Privacidade</a>
+<a href="faq.html">FAQ</a>
+</div>
+
+<p class="copyright">© 2026 JGui Boost. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const privacyItems = document.querySelectorAll('.privacy-item');
+
+searchInput.addEventListener('input', function(e) {
+const term = e.target.value.toLowerCase().trim();
+privacyItems.forEach(item => {
+const text = item.innerText.toLowerCase();
+item.style.display = text.includes(term) ? 'block' : 'none';
+});
+});
+</script>
+
+</body>
+</html>
